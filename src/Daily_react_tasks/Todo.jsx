@@ -8,15 +8,18 @@ function Todo() {
     }
     function handleAdd() {
         setTask([...task, value])
+        setValue('')
+
     }
     function handleDelete() {
         let newArr = task.slice(0, -1)
         setTask(newArr)
+
     }
     return (
         <>
             <form onSubmit={(e) => e.preventDefault()} >
-                <input onChange={handleChangeInput} type="text" />
+                <input value={value} onChange={handleChangeInput} type="text" />
                 <button onClick={handleAdd}>Add</button>
                 <button onClick={handleDelete}>Undo</button>
             </form>

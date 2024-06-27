@@ -5,5 +5,17 @@
  
   
 }
-
+.container{
+  max-width: 500px;
+  font-style:16px;
+  margin: 0 auto;
+}
+.list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 
